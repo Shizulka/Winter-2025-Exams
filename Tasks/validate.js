@@ -2,12 +2,8 @@
 // Validate person name
 
 const isValidate = (T) => {
-  if (!T) return false;
-  if (T === '') return false;
-  if (typeof T !== 'string') return false;
-  if (T.length === 0) return false;
-  if (!T.includes(' ')) return false;
-  {
+  if (typeof T !== 'string' || T.length === 0 || !T.includes(' ')) return false;
+
     for (C of T) {
       if (C === ' ') continue;
       if (
@@ -19,7 +15,7 @@ const isValidate = (T) => {
       }
     }
     return true;
-  }
+
 };
 
 module.exports = isValidate;
