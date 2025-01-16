@@ -1,13 +1,11 @@
-const Week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-NumDay = (day) => {
-  let i;
-  for (i = 0; i < Week.length; i++) {
-    if (day.startsWith(D[i].toLowerCase())) {
-      return i + 1;
-    }
-  }
-  return -1;
-};
+const Day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+const NumDay = (days) => {
+
+  const index = Day.findIndex((day) => days.startsWith(day.toLowerCase()));
+
+  return index === -1 ? -1 : index + 1
+}
 
 module.exports = NumDay;
