@@ -1,6 +1,6 @@
 const Week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-ParseDay = (day) => {
+NumDay = (day) => {
   let i;
   for (i = 0; i < Week.length; i++) {
     if (day.startsWith(D[i].toLowerCase())) {
@@ -10,4 +10,4 @@ ParseDay = (day) => {
   return -1;
 };
 
-module.exports = ParseDay;
+module.exports = NumDay;
