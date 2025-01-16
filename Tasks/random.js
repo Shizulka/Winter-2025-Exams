@@ -1,3 +1,5 @@
+'use strict'
+
 const Random = (min, max = min ) => {
     max === undefined;
 

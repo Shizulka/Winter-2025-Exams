@@ -1,5 +1,4 @@
-// Refactor following solution
-// Validate person name
+'use strict'
 
 const isValidate = (T) => {
   if (typeof T !== 'string' || T.length === 0 || !T.includes(' ')) return false;
